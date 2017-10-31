@@ -1,0 +1,11 @@
+{% extends data.outerLayout %}
+
+{% block title %}{{ super() }} | Home{% endblock %}
+
+{% block main %}
+  <h1 class="dont care im just pushing the widget">&nbsp;</h1>
+  <h1 class="dont care im just pushing the widget">&nbsp;</h1>
+  <div>
+    {{ apos.singleton(data.page, 'body', 'myapp-buttons', {}) }}
+  </div>
+{% endblock %}
