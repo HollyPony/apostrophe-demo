@@ -8,11 +8,13 @@
   <div>
     {{ apos.singleton(data.page, 'body', 'myapp-buttons', {}) }}
   </div>
-  <h1>Array test</h1>
+
+
+  <h1>Array test Home</h1>
   <div>
-    {{ apos.global.getOption('aThing') }}
-    {% for tag in apos.global.getOption('analytic-tags') %}
+    {% for tag in apos.modules['myapp-buttons-widgets'].getOption('analytic-tags') %}
       <p>{{ tag.key }}: {{ tag.value }}</p>
     {% endfor %}
   </div>
+
 {% endblock %}

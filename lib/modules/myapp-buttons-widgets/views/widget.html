@@ -1,1 +1,8 @@
-<div>module.getOption('aThing'): {{ module.getOption('aThing') }}</div>
+<div>module.getOption('fooString'): {{ module.getOption('fooString') }}</div>
+
+<h1>Array test widget</h1>
+<div>
+  {% for tag in module.getOption('analytic-tags') %}
+    <p>{{ tag.key }}: {{ tag.value }}</p>
+  {% endfor %}
+</div>
