@@ -85,5 +85,7 @@
 	"Value Tag": "Value Tag",
 	"Page Home": "Page Home",
 	"Analytics": "Analytics",
-	"Foo String": "Foo String"
+	"Foo String": "Foo String",
+	"Global Only String": "Global Only String",
+	"Widget Override String": "Widget Override String"
 }

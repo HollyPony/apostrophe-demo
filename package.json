@@ -18,6 +18,6 @@
   "homepage": "https://github.com/HollyPony/apostrophe-demo#readme",
   "dependencies": {
     "apostrophe": "^2.39.1",
-    "apostrophe-override-options": "^2.1.0"
+    "apostrophe-override-options": "^2.1.2"
   }
 }

@@ -4,17 +4,9 @@
 
 {% block main %}
   <h1 class="dont care im just pushing the widget">&nbsp;</h1>
-  <h1 class="dont care im just pushing the widget">&nbsp;</h1>
   <div>
     {{ apos.singleton(data.page, 'body', 'myapp-buttons', {}) }}
   </div>
 
-
-  <h1>Array test Home</h1>
-  <div>
-    {% for tag in apos.modules['myapp-buttons-widgets'].getOption('analytic-tags') %}
-      <p>{{ tag.key }}: {{ tag.value }}</p>
-    {% endfor %}
-  </div>
-
+  <h1 class="dont care im just pushing the widget">&nbsp;</h1>
 {% endblock %}

@@ -1,8 +1,37 @@
-<div>module.getOption('fooString'): {{ module.getOption('fooString') }}</div>
+<h1>Fixed override</h1>
 
-<h1>Array test widget</h1>
-<div>
-  {% for tag in module.getOption('analytic-tags') %}
-    <p>{{ tag.key }}: {{ tag.value }}</p>
+<h2>Override widget</h2>
+<p>Global only string: {{ module.getOption('widget-global-only-string') }}</p>
+<p>Widget String: {{ module.getOption('widget-override-string') }}</p>
+
+<h2>Global array</h2>
+<ul>
+  {% for tag in module.getOption('widget-global-only-array') %}
+    <li>{{ tag }}</li>
   {% endfor %}
-</div>
+</ul>
+
+<h2>Overwrite array widget</h2>
+<ul>
+  {% for tag in module.getOption('widget-override-overwrite-array') %}
+    <li>{{ tag }}</li>
+  {% endfor %}
+</ul>
+
+<h2>Append array widget</h2>
+<ul>
+  {% for tag in module.getOption('widget-override-append-array') %}
+    <li>{{ tag }}</li>
+  {% endfor %}
+</ul>
+
+<h1>Editable override</h1>
+<p>Global only string: {{ module.getOption('global-only-string') }}</p>
+<p>Widget override string: {{ module.getOption('global-override-string') }}</p>
+
+<h2>Append array widget</h2>
+<ul>
+  {% for tag in module.getOption('analytic-tags') %}
+    <li>{{ tag.key }}: {{ tag.value }}</li>
+  {% endfor %}
+</ul>
